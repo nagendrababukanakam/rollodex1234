@@ -1,15 +1,33 @@
 import React from 'react'
 
+import { Form } from 'react-bootstrap'
+
+import './Search.styles.css'
+
 const Search = (props) =>{
+
     return(
-        <input
-            name='search'
-            className='search-box'
-            type='password'
-            placeholder='search monsters'
-            onChange = {props.handleSearch}
-        />
-    )
+
+        <>
+
+            <Form.Control
+
+                className="search-box"
+
+                name='search'
+
+                onChange = {props.handleSearch}
+
+                size="lg"
+
+                type="password"
+
+                placeholder="search monsters"/>
+
+        </>
+
+        )
+
 }
 
 export default Search
